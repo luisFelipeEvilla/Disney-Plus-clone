@@ -4,9 +4,15 @@ const Login = (props) => (
     <Container>
         <Content>
             <CTA>
-                <CTALogoOne src="/images/cta-logo-one.svg" alt=""/>
+                <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
+                <SignUp>Get All There</SignUp>
+                <Description>Enjoy the big screen experience on your TV,
+                    or watch on your tablet, laptop, phone and more. 
+                    You can watch an ever-growing selection of titles in 4K. 
+                    Plus, you can stream on 4 screens at once, so everyone’s
+                    happy.</Description>
             </CTA>
-            <BgImage/>
+            <BgImage />
         </Content>
     </Container>
 );
@@ -49,7 +55,7 @@ const CTA = styled.div`
    max-width: 650px;
    width: 100%;
    display: flex;
-   flex-direction: column;
+   flex-direction: column;-
 `;
 
 const CTALogoOne = styled.img`
@@ -59,4 +65,31 @@ const CTALogoOne = styled.img`
     display: block;
     width: 100%;
 `;
+
+const SignUp = styled.a`
+    font-weight: bold;
+    color: #f9f9f9;
+    background-color: #0063e5;
+    margin-bottom: 12px;
+    width: 100%;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    padding: 16.5px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    &:hover {
+        background-color: #0483ee;
+        cursor: pointer;
+    }
+`;
+
+const Description = styled.p`
+    color: hsla(0, 0%, 95.3%, 1);
+    font-size: 15px;
+    margin: 0px 0px 24px;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+`;
+
 export default Login;
