@@ -5,12 +5,15 @@ const Login = (props) => (
         <Content>
             <CTA>
                 <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
-                <SignUp>Get All There</SignUp>
+                <SignUp>GET ALL THERE</SignUp>
                 <Description>Enjoy the big screen experience on your TV,
                     or watch on your tablet, laptop, phone and more. 
                     You can watch an ever-growing selection of titles in 4K. 
                     Plus, you can stream on 4 screens at once, so everyone’s
-                    happy.</Description>
+                    happy.
+                </Description>
+                <CTALogoTwo src="/images/cta-logo-two.png" alt=""/>
+
             </CTA>
             <BgImage />
         </Content>
@@ -90,6 +93,14 @@ const Description = styled.p`
     margin: 0px 0px 24px;
     line-height: 1.5em;
     letter-spacing: 1.5px;
+`;
+
+const CTALogoTwo = styled.img`
+    max-width: 600px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
 `;
 
 export default Login;
