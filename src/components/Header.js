@@ -1,3 +1,4 @@
+import {useEffect} from 'react';
 import styled from 'styled-components';
 import { useDispatch, Selector, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom'
@@ -15,6 +16,15 @@ const Header = (props) => {
     const userName = useSelector(selectUserName);
     const userEmail = useSelector(selectUserEmail);
     const userPhoto = useSelector(selectUserPhoto);
+
+    useEffect(() => {
+        auth.onAuthStateChanged(async user => {
+            if (user) {
+                setUser(user);
+                history.push('/home');
+            }
+        })
+    }, [userName]);
 
     const handleAuth = () => {
         auth
@@ -160,6 +170,7 @@ const NavMenu = styled.div`
         }
 
         &:hover {
+
             span:before {
                 transform: scaleX(1);
                 visibility: visible;
