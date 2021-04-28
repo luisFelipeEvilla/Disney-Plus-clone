@@ -73,7 +73,7 @@ const Carousel = styled(Slider)`
         left: -75px;
     }
 
-    .slick-next: {
+    .slick-next {
         right: -75px;
     }
 `;
