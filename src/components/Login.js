@@ -58,7 +58,7 @@ const CTA = styled.div`
    max-width: 650px;
    width: 100%;
    display: flex;
-   flex-direction: column;-
+   flex-direction: column;
 `;
 
 const CTALogoOne = styled.img`

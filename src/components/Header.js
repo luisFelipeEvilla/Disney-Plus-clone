@@ -137,7 +137,7 @@ const NavMenu = styled.div`
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    heigth: 100%;
+    height: 100%;
     justify-content: flex-end;
     margin: 0px;
     padding: 0px;
