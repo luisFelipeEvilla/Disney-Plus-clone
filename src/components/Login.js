@@ -4,7 +4,7 @@ const Login = (props) => (
     <Container>
         <Content>
             <CTA>
-                <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
+                <CTALogoOne src="/images/logos/cta-logo-one.svg" alt="" />
                 <SignUp>GET ALL THERE</SignUp>
                 <Description>Enjoy the big screen experience on your TV,
                     or watch on your tablet, laptop, phone and more. 
@@ -12,7 +12,7 @@ const Login = (props) => (
                     Plus, you can stream on 4 screens at once, so everyone’s
                     happy.
                 </Description>
-                <CTALogoTwo src="/images/cta-logo-two.png" alt=""/>
+                <CTALogoTwo src="/images/logos/cta-logo-two.png" alt=""/>
 
             </CTA>
             <BgImage />
@@ -46,7 +46,7 @@ const BgImage = styled.div`
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("/images/login-background.jpg");
+    background-image: url("/images/backgrounds/login-background.jpg");
     position: absolute;
     top: 0;
     right: 0;

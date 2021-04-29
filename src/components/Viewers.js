@@ -4,31 +4,31 @@ const Viewers = props => {
     return (
         <Container>
             <Wrap>
-                <img src='/images/viewers-disney.png' alt="Disney"></img>
+                <img src='/images/viewers/viewers-disney.png' alt="Disney"></img>
                 <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                     <source src='/videos/1564674844-disney.mp4' type='video/mp4' />
                 </video>
             </Wrap>
             <Wrap>
-                <img src='/images/viewers-pixar.png' alt="Pixar"></img>
+                <img src='/images/viewers/viewers-pixar.png' alt="Pixar"></img>
                 <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                     <source src='/videos/1564676714-pixar.mp4' type='video/mp4' />
                 </video>
             </Wrap>
             <Wrap>
-                <img src='/images/viewers-marvel.png' alt="Marvel"></img>
+                <img src='/images/viewers/viewers-marvel.png' alt="Marvel"></img>
                 <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                     <source src='/videos/marvel.mp4' type='video/mp4' />
                 </video>
             </Wrap>
             <Wrap>
-                <img src='/images/viewers-starwars.png' alt="Star Wars"></img>
+                <img src='/images/viewers/viewers-starwars.png' alt="Star Wars"></img>
                 <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                     <source src='/videos/1608229455-star-wars.mp4' type='video/mp4' />
                 </video>
             </Wrap>
             <Wrap>
-                <img src='/images/viewers-national.png' alt="National Geographic"></img>
+                <img src='/images/viewers/viewers-national.png' alt="National Geographic"></img>
                 <video autoPlay={true} loop={true} playsInline={true} muted={true}>
                     <source src='/videos/1564676296-national-geographic.mp4' type='video/mp4' />
                 </video>

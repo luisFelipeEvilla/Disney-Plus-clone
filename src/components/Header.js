@@ -60,7 +60,7 @@ const Header = (props) => {
     return (
         <Nav>
             <Logo>
-                <img src="/images/logo.svg" alt="logo" />
+                <img src="/images/logos/logo.svg" alt="logo" />
             </Logo>
             {!userName ? (
                 <Login onClick={handleAuth}>Login </Login>
@@ -68,27 +68,27 @@ const Header = (props) => {
                 <>
                     <NavMenu>
                         <a href="/home">
-                            <img src="/images/home-icon.svg" alt="HOME" />
+                            <img src="/images/icons/home-icon.svg" alt="HOME" />
                             <span>HOME</span>
                         </a>
                         <a href="#">
-                            <img src="/images/search-icon.svg" alt="SEARCH" />
+                            <img src="/images/icons/search-icon.svg" alt="SEARCH" />
                             <span>SEARCH</span>
                         </a>
                         <a href="#">
-                            <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
+                            <img src="/images/icons/watchlist-icon.svg" alt="WATCHLIST" />
                             <span>WATCHLIST</span>
                         </a>
                         <a href="#">
-                            <img src="/images/original-icon.svg" alt="ORIGINAL" />
+                            <img src="/images/icons/original-icon.svg" alt="ORIGINAL" />
                             <span>ORIGINALS</span>
                         </a>
                         <a href="#">
-                            <img src="/images/movie-icon.svg" alt="MOVIE" />
+                            <img src="/images/icons/movie-icon.svg" alt="MOVIE" />
                             <span>MOVIES</span>
                         </a>
                         <a href="#">
-                            <img src="/images/series-icon.svg" alt="SERIES" />
+                            <img src="/images/icons/series-icon.svg" alt="SERIES" />
                             <span>SERIES</span>
                         </a>
                     </NavMenu>
