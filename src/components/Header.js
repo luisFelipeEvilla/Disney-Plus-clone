@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import styled from 'styled-components';
-import { useDispatch, Selector, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom'
 import { auth, provider } from '../firebase';
 import {
     selectUserName,
-    selectUserEmail,
     selectUserPhoto,
     setUserLoginDetails,
     setSignOutState
@@ -15,7 +14,6 @@ const Header = (props) => {
     const dispatch = useDispatch();
     const history = useHistory();
     const userName = useSelector(selectUserName);
-    const userEmail = useSelector(selectUserEmail);
     const userPhoto = useSelector(selectUserPhoto);
 
     useEffect(() => {

@@ -2,14 +2,16 @@ import styled from 'styled-components';
 import ImgSlider from './ImgSlider';
 import Viewers from './Viewers';
 import Recommends from './Recommends';
-import NewDisney from './NewDisney';
-import Originals from './Originals';
-import Trending from './Trending';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import db from '../firebase';
 import { setMovies } from '../features/movie/movieSlice';
 import { selectUserName } from '../features/user/userSlice';
+import { 
+    selectRecommend,
+    selectNewDisney,
+    selectOriginals,
+    selectTrending } from '../features/movie/movieSlice';
 
 const Home = (props) => {
     const dispatch = useDispatch();
@@ -18,6 +20,11 @@ const Home = (props) => {
     let newDisney = [];
     let originals = [];
     let trending = [];
+
+    const recommendsMovies = useSelector(selectRecommend);
+    const newDisneyMovies = useSelector(selectNewDisney);
+    const originalsMovies = useSelector(selectOriginals);
+    const trendingMovies = useSelector(selectTrending);
 
     useEffect(() => {
         db.collection('movies').onSnapshot(snapshot => {
@@ -68,10 +75,10 @@ const Home = (props) => {
         <Container>
             <ImgSlider />
             <Viewers />
-            <Recommends />
-            <NewDisney />
-            <Originals />
-            <Trending />
+            <Recommends title={"Recommends for you"} movies={recommendsMovies}/>
+            <Recommends title={'New to Disney+'} movies={newDisneyMovies}/>
+            <Recommends title={'Originals'} movies={originalsMovies}/>
+            <Recommends title={'Trending'} movies={trendingMovies}/>
         </Container>
     )
 }
